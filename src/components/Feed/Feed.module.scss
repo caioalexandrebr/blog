@@ -3,6 +3,12 @@
 
 .feed {
   &__item {
+    background: #FFFFFF;
+    border: 1px solid #E6E6F0;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    padding: 30px;
+
     @include margin-bottom(1.25);
 
     &:last-child {
@@ -10,7 +16,7 @@
     }
 
     &-title {
-      font-size: $typographic-base-font-size * 1.6875;
+      font-size: $typographic-base-font-size * 1.500;
       @include line-height(1.5);
       @include margin-top(0);
       @include margin-bottom(.5);
@@ -23,9 +29,7 @@
           color: $color-base;
           border-bottom: 1px solid $color-base;
         }
-
       }
-
     }
 
     &-description {
@@ -73,9 +77,6 @@
         color: $color-primary;
         border-bottom: 1px solid $color-primary;
       }
-
     }
-
   }
-
 }

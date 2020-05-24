@@ -11,29 +11,29 @@
 
     &-item {
       padding: 0;
-      margin: 10px 0;
+      margin: 10px 0 20px 0;
 
       &-link {
         font-size: $typographic-base-font-size;
         color: $typographic-base-font-color;
         font-weight: normal;
         border: 0;
+        padding: 10px 20px;
+        border: 1px solid transparent;
+        box-sizing: border-box;
 
         &:hover,
         &:focus {
           color: $color-primary;
-          border-bottom: 1px solid $color-primary;
         }
 
         &--active {
           color: $color-base;
           border-bottom: 1px solid $color-base;
+          border: 1px solid #E6E6F0;
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
         }
-
       }
-
     }
-
   }
-
 }
